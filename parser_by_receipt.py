@@ -15,8 +15,8 @@ fh.setFormatter(formatter)
 
 logger.addHandler(fh)
 
-blk_db = tl.Mongoclient('localhost', 'ethereum', 'block')
-tx_db = tl.Mongoclient('localhost', 'ethereum', 'tx')
+blk_db = tl.mongoClient('localhost', 'ethereum', 'block')
+tx_db = tl.mongoClient('localhost', 'ethereum', 'tx')
 
 latest_blk = tl.get_block_bynumber()
 start_blk = 46147
