@@ -18,7 +18,7 @@ logger.addHandler(fh)
 blk_db = tl.mongoClient('localhost', 'ethereum', 'block')
 tx_db = tl.mongoClient('localhost', 'ethereum', 'tx')
 
-latest_blk = tl.get_block_bynumber()
+latest_blk = tl.get_current_blknum()
 start_blk = 46147
 
 for i in range(start_blk, latest_blk+1):
