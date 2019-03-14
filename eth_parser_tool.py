@@ -1,4 +1,3 @@
-
 # coding: utf-8
 
 # #### All functions used to parser the ETH are aggregated in this .py file
@@ -17,9 +16,6 @@ def mongoClient(uri, db_name, collection_name):
     db = client[db_name]
     collection = db[collection_name]
     return collection
-
-
-# In[8]:
 
 
 #-------------------interact with ETH JsonRPC-------------------------#
